@@ -1,0 +1,18 @@
+@import url(style-guide/colors.css);
+@import url(style-guide/font-sizes.css);
+@import url(style-guide/font-weights.css);
+@import url(style-guide/fonts.css);
+
+@import url(style-guide/typographies.css);
+
+@import url(utils/reset.css);
+
+.title {
+  font: var(--typography-title);
+  letter-spacing: var(--typography-title-lspacing);
+}
+
+.sm-title {
+  font: var(--typography-sm-title);
+  letter-spacing: var(--typography-sm-title-lspacing);
+}
