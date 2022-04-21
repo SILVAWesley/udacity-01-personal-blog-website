@@ -1,8 +1,0 @@
-:root {
-  --typography-title: var(--font-weight-bold) var(--font-size-xxl)
-    var(--font-primary);
-  --typography-title-lspacing: 0.8px;
-  --typography-sm-title: var(--font-weight-semibold) var(--font-size-xl)
-    var(--font-primary);
-  --typography-sm-title-lspacing: 0.8px;
-}
