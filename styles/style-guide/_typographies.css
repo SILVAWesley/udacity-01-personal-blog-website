@@ -1,0 +1,42 @@
+:root {
+  --typography-big-title: var(--font-weight-bold) var(--font-size-xxl)
+    var(--font-primary);
+  --typography-big-title-lspacing: 0.8px;
+  --typography-md-title: var(--font-weight-semibold) var(--font-size-xl)
+    var(--font-primary);
+  --typography-md-title-lspacing: 0.8px;
+  --typography-sm-title: var(--font-weight-semibold) var(--font-size-lg)
+    var(--font-primary);
+  --typography-sm-title-lspacing: 0.8px;
+  --typography-body: var(--font-weight-regular) var(--font-size-md)
+    var(--font-primary);
+  --typography-body-lspacing: 0.8px;
+  --typography-button: var(--font-weight-bold) var(--font-size-sm)
+    var(--font-primary);
+  --typography-button-lspacing: 1px;
+}
+
+.t-big-title {
+  font: var(--typography-big-title);
+  letter-spacing: var(--typography-big-title-lspacing);
+}
+
+.t-md-title {
+  font: var(--typography-md-title);
+  letter-spacing: var(--typography-md-title-lspacing);
+}
+
+.t-sm-title {
+  font: var(--typography-sm-title);
+  letter-spacing: var(--typography-sm-title-lspacing);
+}
+
+.t-body {
+  font: var(--typography-body);
+  letter-spacing: var(--typography-body-lspacing);
+}
+
+.t-button {
+  font: var(--typography-button);
+  letter-spacing: var(--typography-button-lspacing);
+}

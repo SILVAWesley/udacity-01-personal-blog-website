@@ -1,18 +1,102 @@
-@import url(style-guide/colors.css);
-@import url(style-guide/font-sizes.css);
-@import url(style-guide/font-weights.css);
-@import url(style-guide/fonts.css);
+@import url(style-guide/_colors.css);
+@import url(style-guide/_font-sizes.css);
+@import url(style-guide/_font-weights.css);
+@import url(style-guide/_fonts.css);
 
-@import url(style-guide/typographies.css);
+@import url(style-guide/_typographies.css);
 
 @import url(utils/reset.css);
 
-.title {
-  font: var(--typography-title);
-  letter-spacing: var(--typography-title-lspacing);
+body,
+html,
+.root {
+  height: 100%;
+  width: 100%;
 }
 
-.sm-title {
-  font: var(--typography-sm-title);
-  letter-spacing: var(--typography-sm-title-lspacing);
+* {
+  box-sizing: border-box;
+}
+
+/* Basic Layout */
+
+.root {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 56px 80px 1fr 124px;
+  grid-template-areas: "banner" "header" "main" "footer";
+}
+
+.banner {
+  background-color: #212121;
+  grid-area: banner;
+  padding: 0px 16px;
+}
+
+.banner > .banner__content {
+  align-items: center;
+  color: var(--color-gray-50);
+  display: flex;
+  justify-content: space-between;
+  max-width: 300px;
+  height: 100%;
+  width: 100%;
+}
+
+.header {
+  background-color: var(--color-gray-50);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  grid-area: header;
+  padding: 0px 16px;
+}
+
+.header > .header__content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.header > .header__nav {
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  background-color: purple;
+  grid-area: main;
+}
+
+.footer {
+  background-color: red;
+  grid-area: footer;
+}
+
+/* Components */
+
+/* Terciary Button */
+.button--terciary {
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  color: var(--color-primary-500);
+  font: var(--typography-button);
+  height: 44px;
+  letter-spacing: var(--typography-button-lspacing);
+  padding: 0px 12px;
+  outline: none;
+}
+
+.button--terciary:hover {
+  background-color: var(--color-interaction-01);
+}
+
+.button--terciary:focus {
+  border: 2px solid var(--color-gray-200);
+  background-color: var(--color-interaction-02);
+}
+
+.button--terciary:active {
+  background-color: var(--color-interaction-03);
 }
