@@ -40,8 +40,10 @@
     <div class="root">
       <div class="banner">
         <div class="banner__content">
-          <h2 class="banner__heading t-body">Subscribe for more!</h2>
-          <button class="banner__button button--terciary">SUBSCRIBE</button>
+          <h3 class="banner__heading t-body">Subscribe for more!</h3>
+          <button class="button--terciary banner__button" type="button">
+            SUBSCRIBE
+          </button>
         </div>
       </div>
 
@@ -49,14 +51,157 @@
         <div class="header__content">
           <h2 class="header__heading t-sm-title">Wesley's Journal</h2>
           <nav class="header__nav">
-            <i class="bx bx-search header__search"></i>
+            <button
+              aria-label="search for blogs"
+              class="button--icon header__nav__button"
+            >
+              <i class="bx bx-search"></i>
+            </button>
+
+            <div class="divider-h-02"></div>
+
+            <button
+              aria-expanded="false"
+              aria-label="open menu"
+              class="button--icon header__nav__button"
+            >
+              <i class="bx bx-menu"></i>
+            </button>
           </nav>
         </div>
       </header>
 
-      <main class="content">Content</main>
+      <main class="content">
+        <div class="content__container">
+          <h1 class="t-md-title">New Blog Posts</h1>
 
-      <footer class="footer">Footer</footer>
+          <div class="divider-v-03"></div>
+
+          <div class="content__card-container">
+            <div class="card">
+              <div class="card__background-image card-1"></div>
+              <div class="card__container">
+                <div class="card__released">
+                  <p class="t-caption">RELEASED IN April 17, 2022</p>
+                  <p class="t-caption">BY Wesley Silva</p>
+                </div>
+
+                <div class="card__title">
+                  <h3 class="t-sm-title">
+                    My road to mastering the web development
+                  </h3>
+                </div>
+
+                <div class="card__description">
+                  <p class="t-sm-body">
+                    Lorem ipsum dolor sit amet, co nsectetur adipiscing elit.
+                  </p>
+                </div>
+
+                <div class="card__actions">
+                  <button class="button--secondary">READ MORE</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__background-image card-2"></div>
+              <div class="card__container">
+                <div class="card__released">
+                  <p class="t-caption">RELEASED IN April 8, 2022</p>
+                  <p class="t-caption">BY Wesley Silva</p>
+                </div>
+
+                <div class="card__title">
+                  <h3 class="t-sm-title">The importance of patience</h3>
+                </div>
+
+                <div class="card__description">
+                  <p class="t-sm-body">
+                    Lorem ipsum dolor sit amet, co nsectetur adipiscing elit.
+                  </p>
+                </div>
+
+                <div class="card__actions">
+                  <button class="button--secondary">READ MORE</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__background-image card-3"></div>
+              <div class="card__container">
+                <div class="card__released">
+                  <p class="t-caption">RELEASED IN March 5, 2022</p>
+                  <p class="t-caption">BY Wesley Silva</p>
+                </div>
+
+                <div class="card__title">
+                  <h3 class="t-sm-title">Meet New York City</h3>
+                </div>
+
+                <div class="card__description">
+                  <p class="t-sm-body">
+                    Lorem ipsum dolor sit amet, co nsectetur adipiscing elit.
+                  </p>
+                </div>
+
+                <div class="card__actions">
+                  <button class="button--secondary">READ MORE</button>
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="card__background-image card-4"></div>
+              <div class="card__container">
+                <div class="card__released">
+                  <p class="t-caption">RELEASED IN March 1, 2022</p>
+                  <p class="t-caption">BY Wesley Silva</p>
+                </div>
+
+                <div class="card__title">
+                  <h3 class="t-sm-title">Why is rock so good?</h3>
+                </div>
+
+                <div class="card__description">
+                  <p class="t-sm-body">
+                    Lorem ipsum dolor sit amet, co nsectetur adipiscing elit.
+                  </p>
+                </div>
+
+                <div class="card__actions">
+                  <button class="button--secondary">READ MORE</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+
+      <footer class="footer">
+        <div class="footer__container">
+          <h4 class="t-body footer__about">About Wesley Silva</h4>
+
+          <div class="footer__social">
+            <button type="button" class="button--icon">
+              <i class="bx bxl-linkedin footer__social__button"></i>
+            </button>
+
+            <div class="divider-h-01"></div>
+
+            <button type="button" class="button--icon">
+              <i class="bx bxl-twitter footer__social__button"></i>
+            </button>
+
+            <div class="divider-h-01"></div>
+
+            <button type="button" class="button--icon">
+              <i class="bx bxl-facebook footer__social__button"></i>
+            </button>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>
