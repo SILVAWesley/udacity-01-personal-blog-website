@@ -1,3 +1,4 @@
+@import url(style-guide/_border-radius.css);
 @import url(style-guide/_colors.css);
 @import url(style-guide/_font-sizes.css);
 @import url(style-guide/_font-weights.css);
@@ -23,7 +24,7 @@ html,
 .root {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 56px 80px 1fr 124px;
+  grid-template-rows: 56px 80px 1fr 80px;
   grid-template-areas: "banner" "header" "main" "footer";
 }
 
@@ -48,6 +49,7 @@ html,
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
   grid-area: header;
   padding: 0px 16px;
+  z-index: 2;
 }
 
 .header > .header__content {
@@ -58,25 +60,199 @@ html,
   height: 100%;
 }
 
-.header > .header__nav {
+.header__nav {
   display: flex;
   flex-direction: row;
 }
 
+.header__nav__button {
+  font-size: 28px;
+}
+
 .content {
-  background-color: purple;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-gray-50);
   grid-area: main;
+  padding: 32px;
+  width: 100%;
+}
+
+.content__container {
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+}
+
+.content__card-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .content__card-container {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .footer {
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-gray-900);
   grid-area: footer;
+  padding: 0px 16px;
+}
+
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  max-width: 1600px;
+}
+
+.footer__about {
+  color: var(--color-gray-400);
+}
+
+.footer__social {
+  display: flex;
+  color: var(--color-gray-400);
+}
+
+.footer__social__button {
+  font-size: 28px;
+  color: var(--color-gray-300);
 }
 
 /* Components */
 
+/* Card */
+.card {
+  position: relative;
+  border-radius: var(--border-radius-md);
+  padding: 16px 20px;
+  width: 100%;
+  height: 256px;
+  overflow: hidden;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.card__container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 16px 20px;
+  color: #fff;
+  z-index: 6;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 48px 1fr 1fr 1fr 1fr;
+  gap: 4px;
+  grid-template-areas: "released" "title" "description" "author" "actions";
+}
+
+.card__released {
+  grid-area: released;
+  color: var(--color-gray-400);
+}
+
+.card__title {
+  grid-area: title;
+  color: var(--color-gray-50);
+}
+
+.card__description {
+  grid-area: description;
+  color: var(--color-gray-300);
+}
+
+.card__author {
+  grid-area: author;
+  color: var(--color-gray-400);
+}
+
+.card__actions {
+  display: flex;
+  grid-area: actions;
+  justify-content: center;
+}
+
+.card__background-image {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(20%);
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+
+/* Icon Button */
+.button--icon {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+}
+
+.button--icon:hover {
+  background-color: var(--color-interaction-04);
+}
+
+.button--icon:focus {
+  border: 2px solid var(--color-gray-900);
+  background-color: var(--color-interaction-05);
+}
+
+.button--icon:active {
+  border: 2px solid var(--color-gray-900);
+  background-color: var(--color-interaction-06);
+}
+
+/* Secondary Button */
+.button--secondary {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid var(--color-primary-500);
+  border-radius: 8px;
+  color: var(--color-primary-500);
+  font: var(--typography-button);
+  height: 44px;
+  letter-spacing: var(--typography-button-lspacing);
+  padding: 0px 12px;
+  outline: none;
+}
+
+.button--secondary:hover {
+  background-color: var(--color-interaction-01);
+}
+
+.button--secondary:focus {
+  border: 2px solid var(--color-gray-200);
+  background-color: var(--color-interaction-02);
+}
+
+.button--terciary:active {
+  background-color: var(--color-interaction-03);
+}
+
 /* Terciary Button */
 .button--terciary {
+  cursor: pointer;
   background-color: transparent;
   border: 2px solid transparent;
   border-radius: 8px;
@@ -99,4 +275,35 @@ html,
 
 .button--terciary:active {
   background-color: var(--color-interaction-03);
+}
+
+/* Dividers */
+.divider-h-01 {
+  width: 8px;
+  height: 0px;
+}
+
+.divider-h-02 {
+  width: 16px;
+  height: 0px;
+}
+
+.divider-h-03 {
+  width: 24px;
+  height: 0px;
+}
+
+.divider-v-01 {
+  width: 0px;
+  height: 8px;
+}
+
+.divider-v-02 {
+  width: 0px;
+  height: 16px;
+}
+
+.divider-v-03 {
+  width: 0px;
+  height: 24px;
 }

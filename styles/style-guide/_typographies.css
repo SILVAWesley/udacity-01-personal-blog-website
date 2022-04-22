@@ -11,9 +11,15 @@
   --typography-body: var(--font-weight-regular) var(--font-size-md)
     var(--font-primary);
   --typography-body-lspacing: 0.8px;
+  --typography-sm-body: var(--font-weight-regular) var(--font-size-sm)
+    var(--font-primary);
+  --typography-sm-body-lspacing: 0.8px;
   --typography-button: var(--font-weight-bold) var(--font-size-sm)
     var(--font-primary);
   --typography-button-lspacing: 1px;
+  --typography-caption: var(--font-weight-regular) var(--font-size-xs)
+    var(--font-primary);
+  --typography-caption-lspacing: 0.8px;
 }
 
 .t-big-title {
@@ -36,7 +42,17 @@
   letter-spacing: var(--typography-body-lspacing);
 }
 
+.t-sm-body {
+  font: var(--typography-sm-body);
+  letter-spacing: var(--typography-sm-body-lspacing);
+}
+
 .t-button {
   font: var(--typography-button);
   letter-spacing: var(--typography-button-lspacing);
+}
+
+.t-caption {
+  font: var(--typography-caption);
+  letter-spacing: var(--typography-caption-lspacing);
 }
