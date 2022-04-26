@@ -129,6 +129,35 @@ html,
   color: var(--color-gray-300);
 }
 
+/* Blog Layout */
+.blog-root {
+  display: grid;
+  height: 100%;
+  grid-template-columns: 1fr;
+  grid-template-rows: 56px 246px 1fr 80px;
+  grid-template-areas: "banner" "header" "content" "footer";
+}
+
+.blog-header {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  grid-area: header;
+  background-color: black;
+}
+
+.blog-content {
+  display: flex;
+  grid-area: content;
+  height: 100%;
+  padding: 32px;
+  justify-content: center;
+}
+
+.blog-content__text-container {
+  max-width: 780px;
+}
+
 /* Components */
 
 /* Card */
@@ -196,9 +225,38 @@ html,
   z-index: 1;
 }
 
+/* Figure */
+.post-img__container {
+  margin: 16px 0px;
+  width: 100%;
+}
+
+.post-img__img {
+  width: 100%;
+}
+
+.post-img__caption {
+  color: var(--color-gray-600);
+  width: 100%;
+  text-align: center;
+}
+
+/* Blog Card */
+.blog-header__container {
+  grid-template-rows: 96px 1fr 1fr 1fr 1fr;
+  position: unset;
+  max-width: 800px;
+}
+
+.back-icon {
+  font-size: 24px;
+  color: var(--color-gray-50);
+}
+
 /* Icon Button */
 .button--icon {
   cursor: pointer;
+  text-decoration: none;
   background-color: transparent;
   border: 2px solid transparent;
   border-radius: 8px;
@@ -225,6 +283,10 @@ html,
 
 /* Secondary Button */
 .button--secondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
   cursor: pointer;
   background-color: transparent;
   border: 2px solid var(--color-primary-500);
