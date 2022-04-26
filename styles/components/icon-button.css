@@ -1,0 +1,35 @@
+.button--icon {
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  font-size: 28px;
+  height: 44px;
+  justify-content: center;
+  text-decoration: none;
+  width: 44px;
+}
+
+.button--icon:hover {
+  background-color: var(--color-interaction-04);
+}
+
+.button--icon:focus {
+  background-color: var(--color-interaction-05);
+  border: 2px solid var(--color-gray-900);
+}
+
+.button--icon:active {
+  background-color: var(--color-interaction-06);
+  border: 2px solid var(--color-gray-900);
+}
+
+.button--icon.lightbg {
+  color: var(--color-gray-900);
+}
+
+.button--icon.darkbg {
+  color: var(--color-gray-50);
+}

@@ -1,0 +1,14 @@
+.post-img__container {
+  margin: 16px 0px;
+  width: 100%;
+}
+
+.post-img__img {
+  width: 100%;
+}
+
+.post-img__caption {
+  color: var(--color-gray-600);
+  text-align: center;
+  width: 100%;
+}

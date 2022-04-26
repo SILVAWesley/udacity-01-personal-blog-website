@@ -1,0 +1,25 @@
+.button--secondary {
+  align-items: center;
+  background-color: transparent;
+  border: 2px solid var(--color-primary-500);
+  border-radius: 8px;
+  color: var(--color-primary-500);
+  cursor: pointer;
+  display: flex;
+  font: var(--typography-button);
+  height: 44px;
+  justify-content: center;
+  letter-spacing: var(--typography-button-lspacing);
+  outline: none;
+  padding: 0px 12px;
+  text-decoration: none;
+}
+
+.button--secondary:hover {
+  background-color: var(--color-interaction-01);
+}
+
+.button--secondary:focus {
+  background-color: var(--color-interaction-02);
+  border: 2px solid var(--color-gray-200);
+}

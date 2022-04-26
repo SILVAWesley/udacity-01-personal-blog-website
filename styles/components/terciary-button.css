@@ -1,0 +1,25 @@
+.button--terciary {
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  color: var(--color-primary-500);
+  cursor: pointer;
+  font: var(--typography-button);
+  height: 44px;
+  letter-spacing: var(--typography-button-lspacing);
+  outline: none;
+  padding: 0px 12px;
+}
+
+.button--terciary:hover {
+  background-color: var(--color-interaction-01);
+}
+
+.button--terciary:focus {
+  border: 2px solid var(--color-gray-200);
+  background-color: var(--color-interaction-02);
+}
+
+.button--terciary:active {
+  background-color: var(--color-interaction-03);
+}
