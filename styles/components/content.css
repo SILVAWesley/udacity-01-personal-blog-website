@@ -1,0 +1,28 @@
+.content {
+  display: flex;
+  justify-content: center;
+  background-color: var(--color-gray-50);
+  grid-area: content;
+  padding: 32px;
+  width: 100%;
+}
+
+.content__container {
+  max-width: 800px;
+  width: 100%;
+  height: 100%;
+}
+
+.content__card-container {
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr;
+  grid-auto-rows: auto;
+  gap: 24px;
+}
+
+@media (min-width: 1024px) {
+  .content__card-container {
+    grid-template-columns: 1fr 1fr;
+  }
+}

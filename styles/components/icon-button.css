@@ -1,0 +1,34 @@
+.button--icon {
+  cursor: pointer;
+  background-color: transparent;
+  border: 2px solid transparent;
+  border-radius: 8px;
+  display: flex;
+  font-size: 28px;
+  justify-content: center;
+  align-items: center;
+  height: 44px;
+  width: 44px;
+}
+
+.button--icon:hover {
+  background-color: var(--color-interaction-04);
+}
+
+.button--icon:focus {
+  border: 2px solid var(--color-gray-900);
+  background-color: var(--color-interaction-05);
+}
+
+.button--icon:active {
+  border: 2px solid var(--color-gray-900);
+  background-color: var(--color-interaction-06);
+}
+
+.button--icon.lightbg {
+  color: var(--color-gray-900);
+}
+
+.button--icon.darkbg {
+  color: var(--color-gray-50);
+}
