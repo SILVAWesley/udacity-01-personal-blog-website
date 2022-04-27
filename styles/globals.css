@@ -16,6 +16,7 @@
 @import url(components/dividers.css);
 @import url(components/figure.css);
 @import url(components/blog.css);
+@import url(components/profile.css);
 
 @import url(resources/images.css);
 
@@ -30,6 +31,14 @@ html,
 
 * {
   box-sizing: border-box;
+}
+
+em {
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: var(--font-weight-bold);
 }
 
 /* Basic Layout */
