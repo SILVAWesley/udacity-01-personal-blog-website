@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <!-- Meta tags -->
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -25,6 +25,7 @@
     />
 
     <!-- icons -->
+    <link rel="icon" type="image/x-icon" href="./resources/images.ico" />
     <link
       href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
       rel="stylesheet"
@@ -78,7 +79,7 @@
           <div class="divider-v-03"></div>
 
           <div class="content__card-container">
-            <div class="card">
+            <article class="card">
               <div class="card__background-image card-1"></div>
               <div class="card__container">
                 <div class="card__released">
@@ -99,12 +100,14 @@
                 </div>
 
                 <div class="card__actions">
-                  <button class="button--secondary">READ MORE</button>
+                  <a class="button--secondary" href="blogs/blog1.html"
+                    >READ MORE</a
+                  >
                 </div>
               </div>
-            </div>
+            </article>
 
-            <div class="card">
+            <article class="card">
               <div class="card__background-image card-2"></div>
               <div class="card__container">
                 <div class="card__released">
@@ -123,12 +126,14 @@
                 </div>
 
                 <div class="card__actions">
-                  <button class="button--secondary">READ MORE</button>
+                  <a href="blogs/blog2.html" class="button--secondary"
+                    >READ MORE</a
+                  >
                 </div>
               </div>
-            </div>
+            </article>
 
-            <div class="card">
+            <article class="card">
               <div class="card__background-image card-3"></div>
               <div class="card__container">
                 <div class="card__released">
@@ -150,9 +155,9 @@
                   <button class="button--secondary">READ MORE</button>
                 </div>
               </div>
-            </div>
+            </article>
 
-            <div class="card">
+            <article class="card">
               <div class="card__background-image card-4"></div>
               <div class="card__container">
                 <div class="card__released">
@@ -171,10 +176,12 @@
                 </div>
 
                 <div class="card__actions">
-                  <button class="button--secondary">READ MORE</button>
+                  <a href="blogs/blog2.html" class="button--secondary"
+                    >READ MORE</a
+                  >
                 </div>
               </div>
-            </div>
+            </article>
           </div>
         </div>
       </main>
@@ -184,20 +191,33 @@
           <h4 class="t-body footer__about">About Wesley Silva</h4>
 
           <div class="footer__social">
-            <button type="button" class="button--icon">
-              <i class="bx bxl-linkedin footer__social__button"></i>
+            <a
+              aria-label="Linkedin"
+              class="button--icon darkbg"
+              href="https://www.linkedin.com/in/wesleyxsilva/"
+              style="text-decoration: none"
+            >
+              <i class="bx bxl-linkedin"></i>
+            </a>
+
+            <div class="divider-h-01"></div>
+
+            <button
+              aria-label="Twitter"
+              type="button"
+              class="button--icon darkbg"
+            >
+              <i class="bx bxl-twitter"></i>
             </button>
 
             <div class="divider-h-01"></div>
 
-            <button type="button" class="button--icon">
-              <i class="bx bxl-twitter footer__social__button"></i>
-            </button>
-
-            <div class="divider-h-01"></div>
-
-            <button type="button" class="button--icon">
-              <i class="bx bxl-facebook footer__social__button"></i>
+            <button
+              aria-label="Facebook"
+              type="button"
+              class="button--icon darkbg"
+            >
+              <i class="bx bxl-facebook"></i>
             </button>
           </div>
         </div>

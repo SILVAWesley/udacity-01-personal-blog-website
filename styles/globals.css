@@ -5,8 +5,6 @@
 @import url(style-guide/_fonts.css);
 @import url(style-guide/_typographies.css);
 
-@import url(utils/reset.css);
-
 @import url(components/banner.css);
 @import url(components/content.css);
 @import url(components/footer.css);
@@ -16,6 +14,13 @@
 @import url(components/secondary-button.css);
 @import url(components/terciary-button.css);
 @import url(components/dividers.css);
+@import url(components/figure.css);
+@import url(components/blog.css);
+@import url(components/profile.css);
+
+@import url(resources/images.css);
+
+@import url(utils/reset.css);
 
 body,
 html,
@@ -28,11 +33,32 @@ html,
   box-sizing: border-box;
 }
 
-/* Basic Layout */
+em {
+  text-decoration: underline;
+}
 
+strong {
+  font-weight: var(--font-weight-bold);
+}
+
+/* Basic Layout */
 .root {
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: 56px 80px 1fr 80px;
   grid-template-areas: "banner" "header" "content" "footer";
+}
+
+/* Components */
+
+/* Blog Card */
+.blog-header__container {
+  grid-template-rows: 96px 1fr 1fr 1fr 1fr;
+  max-width: 800px;
+  position: unset;
+}
+
+.back-icon {
+  color: var(--color-gray-50);
+  font-size: 24px;
 }

@@ -1,13 +1,14 @@
 .button--icon {
-  cursor: pointer;
+  align-items: center;
   background-color: transparent;
   border: 2px solid transparent;
   border-radius: 8px;
+  cursor: pointer;
   display: flex;
   font-size: 28px;
-  justify-content: center;
-  align-items: center;
   height: 44px;
+  justify-content: center;
+  text-decoration: none;
   width: 44px;
 }
 
@@ -16,13 +17,13 @@
 }
 
 .button--icon:focus {
-  border: 2px solid var(--color-gray-900);
   background-color: var(--color-interaction-05);
+  border: 2px solid var(--color-gray-900);
 }
 
 .button--icon:active {
-  border: 2px solid var(--color-gray-900);
   background-color: var(--color-interaction-06);
+  border: 2px solid var(--color-gray-900);
 }
 
 .button--icon.lightbg {

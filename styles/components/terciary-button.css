@@ -1,14 +1,14 @@
 .button--terciary {
-  cursor: pointer;
   background-color: transparent;
   border: 2px solid transparent;
   border-radius: 8px;
   color: var(--color-primary-500);
+  cursor: pointer;
   font: var(--typography-button);
   height: 44px;
   letter-spacing: var(--typography-button-lspacing);
-  padding: 0px 12px;
   outline: none;
+  padding: 0px 12px;
 }
 
 .button--terciary:hover {

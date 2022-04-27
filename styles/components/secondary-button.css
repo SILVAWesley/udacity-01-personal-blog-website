@@ -1,14 +1,18 @@
 .button--secondary {
-  cursor: pointer;
+  align-items: center;
   background-color: transparent;
   border: 2px solid var(--color-primary-500);
   border-radius: 8px;
   color: var(--color-primary-500);
+  cursor: pointer;
+  display: flex;
   font: var(--typography-button);
   height: 44px;
+  justify-content: center;
   letter-spacing: var(--typography-button-lspacing);
-  padding: 0px 12px;
   outline: none;
+  padding: 0px 12px;
+  text-decoration: none;
 }
 
 .button--secondary:hover {
@@ -16,10 +20,6 @@
 }
 
 .button--secondary:focus {
-  border: 2px solid var(--color-gray-200);
   background-color: var(--color-interaction-02);
-}
-
-.button--terciary:active {
-  background-color: var(--color-interaction-03);
+  border: 2px solid var(--color-gray-200);
 }

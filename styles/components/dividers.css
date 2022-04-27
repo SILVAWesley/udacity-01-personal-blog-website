@@ -1,29 +1,29 @@
 .divider-h-01 {
-  width: 8px;
   height: 0px;
+  width: 8px;
 }
 
 .divider-h-02 {
-  width: 16px;
   height: 0px;
+  width: 16px;
 }
 
 .divider-h-03 {
-  width: 24px;
   height: 0px;
+  width: 24px;
 }
 
 .divider-v-01 {
-  width: 0px;
   height: 8px;
+  width: 0px;
 }
 
 .divider-v-02 {
-  width: 0px;
   height: 16px;
+  width: 0px;
 }
 
 .divider-v-03 {
-  width: 0px;
   height: 24px;
+  width: 0px;
 }

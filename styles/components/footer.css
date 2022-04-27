@@ -1,18 +1,18 @@
 .footer {
-  display: flex;
-  justify-content: center;
   background-color: var(--color-gray-900);
+  display: flex;
   grid-area: footer;
+  justify-content: center;
   padding: 0px 16px;
 }
 
 .footer__container {
-  display: flex;
-  justify-content: space-between;
   align-items: center;
+  display: flex;
   height: 100%;
-  width: 100%;
+  justify-content: space-between;
   max-width: 1600px;
+  width: 100%;
 }
 
 .footer__about {
@@ -20,11 +20,6 @@
 }
 
 .footer__social {
-  display: flex;
   color: var(--color-gray-400);
-}
-
-.footer__social__button {
-  font-size: 28px;
-  color: var(--color-gray-300);
+  display: flex;
 }
