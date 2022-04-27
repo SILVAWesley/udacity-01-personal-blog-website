@@ -1,9 +1,9 @@
-@import url(style-guide/_border-radius.css);
-@import url(style-guide/_colors.css);
-@import url(style-guide/_font-sizes.css);
-@import url(style-guide/_font-weights.css);
-@import url(style-guide/_fonts.css);
-@import url(style-guide/_typographies.css);
+@import url(style-guide/border-radius.css);
+@import url(style-guide/colors.css);
+@import url(style-guide/font-sizes.css);
+@import url(style-guide/font-weights.css);
+@import url(style-guide/fonts.css);
+@import url(style-guide/typographies.css);
 
 @import url(components/banner.css);
 @import url(components/content.css);
