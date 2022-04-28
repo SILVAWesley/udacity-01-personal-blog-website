@@ -25,3 +25,10 @@
 .blog-content__text-container {
   max-width: 780px;
 }
+
+.blog__quotes {
+  background-color: var(--color-gray-200);
+  border-radius: var(--border-radius-sm);
+  margin: 32px 0px;
+  padding: 32px;
+}
